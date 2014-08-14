@@ -1,0 +1,131 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	/*min-width: 1307px;*/
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html{
+	font-size: 16px;
+	/*Base-width for percentages in 1440px*/
+}
+a{
+	text-decoration: none;
+}
+a {color:inherit;}      /* unvisited link */
+a:visited {color:inherit;}  /* visited link */
+a:hover {color:inherit;}  /* mouse over link */
+a:active {color:inherit;}  /* selected link */
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+font-family: 'moderna';
+font-style: normal;
+font-weight: normal;
+src: local('moderna'), url('MODERNA_.woff') format('woff');
+}
+
+
+
+
+
+header{
+	-webkit-box-shadow: 0 8px 6px -6px #BCBCBC;
+	   -moz-box-shadow: 0 8px 6px -6px #BCBCBC;
+	        box-shadow: 0 8px 6px -6px #BCBCBC;
+}
+.headContain{
+	width: 1050px;
+	margin: 0 auto;
+}
+.headContain>div{
+	display: inline-block;
+}
+.smallLogoContain{
+	width: 150px;
+}
+.smallLogoContain img{
+	width: 100%;
+}
+.navContain{
+	float: right;
+	font-family: 'moderna';
+	margin-top: 41px;
+	margin-right: 20px;
+	color: #432813;
+}
+nav ul li{
+	display: inline;
+	margin-right: 53px;
+}
+nav ul li:last-child{
+	margin-right: 0px;
+}
+.logoContain{
+	padding-top: 40px;
+	width: 910px;
+	margin: 0 auto;
+}
+.logoContain img{
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
