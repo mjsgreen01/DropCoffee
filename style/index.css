@@ -73,6 +73,14 @@ src: local('moderna'), url('MODERNA_.woff') format('woff');
 }
 
 
+/*.header1{
+	position: fixed;
+	width: 100%;
+	-webkit-box-shadow: 0 0 0;
+	   -moz-box-shadow: 0 0 0;
+	        box-shadow: 0 0 0;
+}*/
+
 
 
 
@@ -80,16 +88,21 @@ header{
 	-webkit-box-shadow: 0 8px 6px -6px #BCBCBC;
 	   -moz-box-shadow: 0 8px 6px -6px #BCBCBC;
 	        box-shadow: 0 8px 6px -6px #BCBCBC;
+	    position: fixed;
+		width: 100%;
+		background-color: white;
+		z-index: 5;
 }
 .headContain{
 	width: 1050px;
 	margin: 0 auto;
+	opacity: .65;
 }
 .headContain>div{
 	display: inline-block;
 }
 .smallLogoContain{
-	width: 150px;
+	width: 130px;
 }
 .smallLogoContain img{
 	width: 100%;
@@ -97,7 +110,7 @@ header{
 .navContain{
 	float: right;
 	font-family: 'moderna';
-	margin-top: 41px;
+	margin-top: 38px;
 	margin-right: 20px;
 	color: #432813;
 }
@@ -108,10 +121,39 @@ nav ul li{
 nav ul li:last-child{
 	margin-right: 0px;
 }
+.sec1{
+	padding-top: 100px;
+	background: url(coffeeBack1.jpg) no-repeat center 30%;
+	-webkit-background-size: cover;  
+  	-moz-background-size: cover;  
+  	-o-background-size: cover;  
+  	background-size: cover;
+  	overflow: hidden;
+  	height: 600px;
+  	background-attachment: fixed;
+  	opacity: 0;
+
+  	-webkit-transition: all 2s ease-out;
+	  -moz-transition: all 2s ease-out;
+	  -o-transition: all 2s ease-out;
+	  transition: all 2s ease-out;
+}
+.sec1In{
+	opacity: 1;
+}
 .logoContain{
-	padding-top: 40px;
-	width: 910px;
+	padding-top: 30px;
+	width: 950px;
 	margin: 0 auto;
+	opacity: 0;
+
+	-webkit-transition: opacity 1.2s ease-out, width 1.2s ease-out;
+	  -moz-transition: opacity 1.2s ease-out, width 1.2s ease-out;
+	  -o-transition: opacity 1.2s ease-out, width 1.2s ease-out;
+	  transition: opacity 1.2s ease-out, width 1.2s ease-out;
+}
+.logoContainIn{
+	opacity: 1;
 }
 .logoContain img{
 	width: 100%;
@@ -119,7 +161,9 @@ nav ul li:last-child{
 
 
 
-
+.sec2{
+	height: 600px;
+}
 
 
 
