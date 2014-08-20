@@ -19,18 +19,20 @@ $(document).ready(function(){
 
 
 
-	var screenTop = $(window).scrollTop();
+	var scrolled = $(window).scrollTop();
 
 	function parallaxContent(content, adjuster, inertia){
-    	var scrolled = $(window).scrollTop();
     	$(content).css('margin-top', -((scrolled + adjuster) * inertia) + 'px');
     };
 
 
-    $(window).scroll(function(e){
+    $(window).scroll(function(){
+    	scrolled = $(window).scrollTop();
     	parallaxContent('.logoContain', 0, -0.57);
+    	if (scrolled > ($('.sec2').offset().top-200)) {
+    		$('.headContain').addClass('headContainDark');
+    	}
 	});
-
 
 
 
