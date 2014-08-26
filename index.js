@@ -32,6 +32,9 @@ $(document).ready(function(){
     	if (scrolled > ($('.sec2').offset().top-200)) {
     		$('.headContain').addClass('headContainDark');
     	}
+    	if (scrolled < ($('.sec2').offset().top-200)) {
+    		$('.headContain').removeClass('headContainDark');
+    	}
 	});
 
 
